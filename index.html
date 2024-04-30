@@ -1,0 +1,67 @@
+<!-- Se crea una estructura básica para una aplicación de clima, que incluye un cuadro de búsqueda, información del clima actual y detalles adicionales del clima 
+    como humedad y velocidad del viento. Las imágenes y los estilos están referenciados en archivos externos, 
+    y la funcionalidad interactiva está destinada a ser proporcionada por un archivo de script separado -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IR=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <!-- Enlace al archivo CSS que contiene estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlace a la biblioteca de iconos boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <!-- Contenedor principal -->
+        <div class="search-box">
+            <!-- Cuadro de búsqueda -->
+            <i class='bx bxs-map'></i> <!-- Icono de ubicación -->
+            <input type="text" name="location" id="location" placeholder="ingrese su ubicacion"> <!-- Campo de entrada para la ubicación -->
+            <button type="button" class="bx bx-search"></button> <!-- Botón de búsqueda -->
+        </div>
+        <div class="city-name" id="="city-name"></div> <!-- Nombre de la ciudad -->
+
+        <div class="weather-box">
+            <!-- Cuadro de información del clima -->
+            <div class="info-weather">
+                <!-- Información del clima -->
+                <div class="weather">
+                    <!-- Sección de detalles del clima -->
+                    <img src="images/suncloud.png" alt=""> <!-- Imagen del clima -->
+                    <p class="temperature">17<span>°C</span></p> <!-- Temperatura -->
+                    <p class="description">Broken Clouds</p> <!-- Descripción del clima -->
+                </div>
+            </div>
+        </div>
+        <div class="weather-details">
+            <!-- Detalles del clima -->
+            <div class="humidity">
+                <!-- Humedad -->
+                <i class='bx bx-water'></i> <!-- Icono de humedad -->
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span> <!-- Valor de humedad -->
+                    </div>
+                    <p>Humidity</p> <!-- Etiqueta de humedad -->
+                </div>
+            </div>
+            <div class="wind">
+                <!-- Velocidad del viento -->
+                <i class='bx bx-wind'></i> <!-- Icono de viento -->
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0Km</span> <!-- Valor de velocidad del viento -->
+                    </div>
+                    <p>Wind Speed</p> <!-- Etiqueta de velocidad del viento -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Se incluye el archivo de script para la funcionalidad interactiva -->
+    <script src="script.js"></script>
+</body>
+</html>
